@@ -1,21 +1,147 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kocham, czuję i rozumiem</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f1d1d6, #e3a5b0, #f6cbd2, #ffe0e5, #d09da6);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      max-width: 150px;
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 2em;
+      margin: 0;
+    }
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+    .socials a {
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #fff;
+      background-color: #d09da6;
+      padding: 10px 20px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+    .socials a:hover {
+      background-color: #e3a5b0;
+    }
+    .counter {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .counter div {
+      background: #fff;
+      display: inline-block;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #d09da6;
+    }
+    ul, ol {
+      margin-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
 </head>
-<body> 
+<body>
 
-    <header></header>
+  <header>
+    <!-- Wstaw swoje logo -->
+    <img src="zdj1.jpg" alt="Logo projektu">
+    <h1>Kocham, czuję i rozumiem</h1>
 
-    <main></main>
+    <div class="socials">
+      <a href="https://instagram.com/" target="_blank">Instagram</a>
+      <a href="https://tiktok.com/" target="_blank">TikTok</a>
+    </div>
+  </header>
 
-    <section class="lewy"></section>
+  <section class="counter">
+    <div>
+      <strong>Instagram:</strong> <span id="ig-followers">1234</span> obserwujących
+    </div>
+    <div>
+      <strong>TikTok:</strong> <span id="tt-followers">5678</span> obserwujących
+    </div>
+  </section>
 
-    <section class="prawy"></section>
+  <main>
+    <h2>Hej! Witamy was na naszej stronie internetowej ❤️</h2>
+    <p>Miło do was wrócić z drugą edycją naszego projektu <b>Kocham, czuję i rozumiem</b>. Wracamy z podwójną mocą i nastawieniem do niesienia wam wsparcia, dziękujemy za tak świetny odbiór tego co robimy...</p>
 
-    <footer></footer>
+    <h2>Relacja FWB – Friends with Benefits</h2>
+    <p>Relacja friends with benefits (FWB) to układ, w którym dwie osoby są znajomymi/przyjaciółmi, ale dodatkowo łączy je sfera fizyczna – bez zobowiązań typowych dla klasycznego związku romantycznego...</p>
+
+    <h3>Zalety</h3>
+    <ol>
+      <li>Bliskość fizyczna bez formalności</li>
+      <li>Znajomość i zaufanie</li>
+      <li>Brak presji</li>
+      <li>Eksperymenty i luz</li>
+    </ol>
+
+    <h3>Wady</h3>
+    <ul>
+      <li>Ryzyko uczuć</li>
+      <li>Zazdrość</li>
+      <li>Napięcia w przyjaźni</li>
+      <li>Brak jasności</li>
+      <li>Trudności w zakończeniu</li>
+    </ul>
+
+    <h3>Jak najlepiej wyjść z FWB?</h3>
+    <ol>
+      <li>Szczerość</li>
+      <li>Ustal granice końca</li>
+      <li>Nie przedłużaj na siłę</li>
+      <li>Nie oczekuj cudów</li>
+      <li>Zadbaj o siebie</li>
+    </ol>
+
+    <p><b>Podsumowanie:</b> Relacje FWB mogą dawać pewne korzyści, ale wymagają dużej świadomości i szczerości wobec siebie i drugiej osoby. Zawsze stawiaj siebie i swoje zdrowie psychiczne na pierwszym miejscu.</p>
+  </main>
+
+  <footer>
+    <p>© 2025 Projekt "Kocham, czuję i rozumiem"</p>
+  </footer>
+
+  <script>
+    // Tutaj możesz podpiąć API Instagrama i TikToka do dynamicznego zliczania obserwatorów.
+    // Obecnie ustawione są przykładowe liczby.
+  </script>
 </body>
 </html>
