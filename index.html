@@ -6,142 +6,252 @@
   <title>Kocham, czuję i rozumiem</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #f1d1d6, #e3a5b0, #f6cbd2, #ffe0e5, #d09da6);
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(135deg, #f1d1d6, #f6cbd2, #ffe0e5, #e3a5b0, #d09da6);
       margin: 0;
       padding: 0;
       color: #333;
+      scroll-behavior: smooth;
     }
+
     header {
       text-align: center;
-      padding: 20px;
+      padding: 40px 20px 20px;
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(8px);
     }
+
     header img {
       max-width: 150px;
       margin-bottom: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
+
     h1 {
-      font-size: 2em;
+      font-size: 2.5em;
       margin: 0;
+      color: #b25d6d;
+      letter-spacing: 1px;
     }
+
     .socials {
       display: flex;
       justify-content: center;
       gap: 20px;
-      margin-top: 10px;
+      margin-top: 15px;
     }
+
     .socials a {
       text-decoration: none;
-      font-size: 1.2em;
+      font-size: 1em;
       font-weight: bold;
       color: #fff;
       background-color: #d09da6;
-      padding: 10px 20px;
-      border-radius: 20px;
+      padding: 10px 25px;
+      border-radius: 30px;
       transition: 0.3s;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
     }
+
     .socials a:hover {
       background-color: #e3a5b0;
+      transform: translateY(-2px);
     }
+
     .counter {
       text-align: center;
-      margin: 20px 0;
+      margin: 25px 0;
     }
+
     .counter div {
       background: #fff;
       display: inline-block;
-      padding: 15px;
+      padding: 15px 25px;
       margin: 10px;
       border-radius: 15px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
     main {
-      max-width: 900px;
+      max-width: 950px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 30px;
       background: #fff;
-      border-radius: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 25px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      line-height: 1.7;
+      margin-top: 50px;
+      margin-bottom: 50px;
     }
+
+    section {
+      margin-bottom: 40px;
+      animation: fadeInUp 1s ease;
+    }
+
     h2 {
-      color: #d09da6;
+      color: #c06b7f;
+      border-bottom: 2px solid #f6cbd2;
+      padding-bottom: 5px;
     }
+
+    h3 {
+      color: #b25d6d;
+      margin-top: 20px;
+    }
+
     ul, ol {
-      margin-left: 20px;
+      margin-left: 25px;
     }
+
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 25px;
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(8px);
       font-size: 0.9em;
       color: #555;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <!-- Wstaw swoje logo -->
     <img src="zdj1.jpg" alt="Logo projektu">
     <h1>Kocham, czuję i rozumiem</h1>
 
     <div class="socials">
       <a href="https://www.instagram.com/_kocham.czuje.rozumiem_" target="_blank">Instagram</a>
-      <a href="https://www.tiktok.com/@_kocham.czuje.rozumiem_?_r=1&_d=secCgYIASAHKAESPgo8D6w0OduMD87P9Zu4pQyfSC3Vd87%2FHcSP9zhID4r8ogJjmqaIzQkzdiyW4DFf6dEaOuNMesOb3LXRn4F5GgA%3D&_svg=2&checksum=f13bb645d89a5059790ef0ad08beaf06f8489e269de272a955d4c886d47060a8&item_author_type=1&sec_uid=MS4wLjABAAAA0qZePwUOBi4CoYtZKrWeFYC2fGtmb3Nu-bbferWGWUSGAGxoY7IsAK3ktL-0evTN&sec_user_id=MS4wLjABAAAA0qZePwUOBi4CoYtZKrWeFYC2fGtmb3Nu-bbferWGWUSGAGxoY7IsAK3ktL-0evTN&share_app_id=1233&share_author_id=7415179166474011680&share_link_id=1035D6D5-21E0-4E81-8B10-BF170BF0E334&share_scene=1&sharer_language=pl&social_share_type=4&source=h5_m&timestamp=1758051065&tt_from=copy&u_code=eg89mekd87b75m&ug_btm=b8727%2Cb0&user_id=7415179166474011680&utm_campaign=client_share&utm_medium=ios&utm_source=copy" target="_blank">TikTok</a>
+      <a href="https://www.tiktok.com/@_kocham.czuje.rozumiem_" target="_blank">TikTok</a>
     </div>
   </header>
 
-  <section class="counter">
-    <div>
-      <strong>Instagram:</strong> <span id="ig-followers">1234</span> obserwujących
-    </div>
-    <div>
-      <strong>TikTok:</strong> <span id="tt-followers">5678</span> obserwujących
-    </div>
-  </section>
-
   <main>
-    <h2>Hej! Witamy was na naszej stronie internetowej ❤️</h2>
-    <p>Miło do was wrócić z drugą edycją naszego projektu <b>Kocham, czuję i rozumiem</b>. Wracamy z podwójną mocą i nastawieniem do niesienia wam wsparcia, dziękujemy za tak świetny odbiór tego co robimy...</p>
 
-    <h2>Relacja FWB – Friends with Benefits</h2>
-    <p>Relacja friends with benefits (FWB) to układ, w którym dwie osoby są znajomymi/przyjaciółmi, ale dodatkowo łączy je sfera fizyczna – bez zobowiązań typowych dla klasycznego związku romantycznego...</p>
+    <section>
+      <h2>Hej! Witamy was na naszej stronie internetowej ❤️</h2>
+      <p>Miło do was wrócić z drugą edycją naszego projektu <b>Kocham, czuję i rozumiem</b>. Wracamy z podwójną mocą i nastawieniem do niesienia wam wsparcia, dziękujemy za tak świetny odbiór tego co robimy...</p>
+    </section>
 
-    <h3>Zalety</h3>
-    <ol>
-      <li>Bliskość fizyczna bez formalności</li>
-      <li>Znajomość i zaufanie</li>
-      <li>Brak presji</li>
-      <li>Eksperymenty i luz</li>
-    </ol>
+    <section>
+      <h2>Relacja FWB – Friends with Benefits</h2>
+      <p>Relacja friends with benefits (FWB) to układ, w którym dwie osoby są znajomymi/przyjaciółmi, ale dodatkowo łączy je sfera fizyczna – bez zobowiązań typowych dla klasycznego związku romantycznego.</p>
 
-    <h3>Wady</h3>
-    <ul>
-      <li>Ryzyko uczuć</li>
-      <li>Zazdrość</li>
-      <li>Napięcia w przyjaźni</li>
-      <li>Brak jasności</li>
-      <li>Trudności w zakończeniu</li>
-    </ul>
+      <h3>Zalety</h3>
+      <ol>
+        <li>Bliskość fizyczna bez formalności</li>
+        <li>Znajomość i zaufanie</li>
+        <li>Brak presji</li>
+        <li>Eksperymenty i luz</li>
+      </ol>
 
-    <h3>Jak najlepiej wyjść z FWB?</h3>
-    <ol>
-      <li>Szczerość</li>
-      <li>Ustal granice końca</li>
-      <li>Nie przedłużaj na siłę</li>
-      <li>Nie oczekuj cudów</li>
-      <li>Zadbaj o siebie</li>
-    </ol>
+      <h3>Wady</h3>
+      <ul>
+        <li>Ryzyko uczuć</li>
+        <li>Zazdrość</li>
+        <li>Napięcia w przyjaźni</li>
+        <li>Brak jasności</li>
+        <li>Trudności w zakończeniu</li>
+      </ul>
 
-    <p><b>Podsumowanie:</b> Relacje FWB mogą dawać pewne korzyści, ale wymagają dużej świadomości i szczerości wobec siebie i drugiej osoby. Zawsze stawiaj siebie i swoje zdrowie psychiczne na pierwszym miejscu.</p>
+      <h3>Jak najlepiej wyjść z FWB?</h3>
+      <ol>
+        <li>Szczerość</li>
+        <li>Ustal granice końca</li>
+        <li>Nie przedłużaj na siłę</li>
+        <li>Nie oczekuj cudów</li>
+        <li>Zadbaj o siebie</li>
+      </ol>
+
+      <p><b>Podsumowanie:</b> Relacje FWB mogą dawać pewne korzyści, ale wymagają dużej świadomości i szczerości wobec siebie i drugiej osoby. Zawsze stawiaj siebie i swoje zdrowie psychiczne na pierwszym miejscu.</p>
+    </section>
+
+    <section>
+      <h2>Dlaczego tak dużo osób unika szczerej rozmowy?</h2>
+      <ol>
+        <li><b>Lęk przed konfliktem</b> – boimy się, że szczerość doprowadzi do kłótni lub zepsuje relację.</li>
+        <li><b>Lęk przed oceną lub odrzuceniem</b> – szczerość odsłania nas, czyniąc bardziej wrażliwymi.</li>
+        <li><b>Brak umiejętności komunikacyjnych</b> – nie każdy potrafi mówić prawdę delikatnie.</li>
+        <li><b>Chęć zachowania spokoju</b> – wolimy pozory harmonii niż autentyczność.</li>
+        <li><b>Doświadczenia z przeszłości</b> – wcześniejsze zawstydzenie za szczerość uczy unikania jej.</li>
+        <li><b>Społeczne normy i konwenanse</b> – w niektórych środowiskach szczerość to „brak taktu”.</li>
+        <li><b>Brak zaufania</b> – bez poczucia bezpieczeństwa trudno o prawdziwą otwartość.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Jak powstają emocje? I dlaczego są nam tak potrzebne?</h2>
+      <h3>🧠 Jak powstają emocje?</h3>
+      <ol>
+        <li><b>Bodziec</b> – coś się dzieje (np. ktoś krzyczy, widzimy uśmiech).</li>
+        <li><b>Ocena sytuacji</b> – mózg ocenia, czy to coś dobrego czy złego (układ limbiczny).</li>
+        <li><b>Reakcja fizjologiczna</b> – przyspieszone bicie serca, uśmiech, napięcie mięśni.</li>
+        <li><b>Świadome odczucie</b> – dopiero później rozumiemy, co czujemy.</li>
+      </ol>
+
+      <h3>❤️ Dlaczego emocje są nam potrzebne?</h3>
+      <ul>
+        <li>Pomagają przetrwać (strach, złość, smutek).</li>
+        <li>Ułatwiają podejmowanie decyzji.</li>
+        <li>Budują relacje społeczne.</li>
+        <li>Motywują do działania.</li>
+        <li>Pozwalają lepiej poznać siebie.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Dlaczego zakochanie mija – psychologia miłości w różnych etapach związku</h2>
+      <h3>💞 1. Etap zakochania (faza namiętności)</h3>
+      <p>Trwa zwykle od kilku miesięcy do 2 lat. To czas hormonów szczęścia, euforii i idealizacji.</p>
+
+      <h3>💕 2. Etap przywiązania (miłość dojrzalsza)</h3>
+      <p>Mózg uspokaja się, rośnie oksytocyna – pojawia się zaufanie i poczucie bezpieczeństwa.</p>
+
+      <h3>💗 3. Etap dojrzałej miłości</h3>
+      <p>Miłość staje się świadomym wyborem. Partnerzy akceptują się i tworzą głęboką więź.</p>
+
+      <h3>💔 Dlaczego zakochanie mija?</h3>
+      <p>Nie dlatego, że coś się psuje – to naturalny proces biologiczny. Mózg nie mógłby długo utrzymywać stanu euforii, dlatego przechodzi w spokojniejszy tryb, który sprzyja stabilności i bliskości.</p>
+    </section>
+
+    <section>
+      <h2>Przyjaźń damsko-męska – dlaczego budzi kontrowersje?</h2>
+      <h3>💭 Skąd się biorą kontrowersje?</h3>
+      <ul>
+        <li><b>Społeczne stereotypy</b> – kultura często łączy mężczyznę i kobietę z romansem.</li>
+        <li><b>Biologia i pociąg fizyczny</b> – emocjonalna bliskość może być mylona z romantyczną.</li>
+        <li><b>Zazdrość partnera</b> – obawa o emocjonalną zdradę.</li>
+      </ul>
+
+      <h3>💞 Co mówi psychologia?</h3>
+      <p>Badania pokazują, że przyjaźnie między płciami są możliwe, ale często zawierają napięcie emocjonalne. Mężczyźni częściej interpretują przyjaźń jako flirt, kobiety – jako relację emocjonalną.</p>
+
+      <h3>🌱 Kiedy przyjaźń działa?</h3>
+      <ul>
+        <li>Jasno określone granice.</li>
+        <li>Brak ukrytych oczekiwań.</li>
+        <li>Szacunek dla partnera.</li>
+        <li>Zaufanie i autentyczność.</li>
+      </ul>
+
+      <h3>🔎 Dlaczego mimo wszystko warto?</h3>
+      <ul>
+        <li>Uczy empatii i zrozumienia.</li>
+        <li>Wzbogaca emocjonalnie.</li>
+        <li>Pomaga spojrzeć na świat z innej perspektywy.</li>
+      </ul>
+    </section>
+
   </main>
 
   <footer>
-    <p>© 2025 Projekt "Kocham, czuję i rozumiem"</p>
+    <p>© 2025 Projekt "Kocham, czuję i rozumiem" | Stworzone z sercem ❤️</p>
   </footer>
 
-  <script>
-    // Tutaj możesz podpiąć API Instagrama i TikToka do dynamicznego zliczania obserwatorów.
-    // Obecnie ustawione są przykładowe liczby.
-  </script>
 </body>
 </html>
